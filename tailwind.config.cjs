@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         custom: "#3caea3",
       },
+      fontFamily: {
+        headline: "Poppins, sans-serif",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
