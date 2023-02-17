@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   * {
     margin: 0 !important;
   }
-}
+} */
