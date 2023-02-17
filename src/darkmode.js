@@ -1,13 +1,10 @@
-import "./style.css";
+export function darkMode() {
+  const root = document.querySelector("html");
+  const btn = document.querySelector("#toggle-darkmode");
 
-//referencer
-const root = document.querySelector("html");
-const btn = document.querySelector("#toggle-darkmode");
+  function toggleTheme() {
+    root.classList.toggle("dark");
+  }
 
-//toggle funktionalitet
-function toggleTheme() {
-  root.classList.toggle("dark");
+  btn.addEventListener("click", toggleTheme);
 }
-
-//Klik-event
-btn.addEventListener("click", toggleTheme);
