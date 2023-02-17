@@ -1,19 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="./assets/main-86554240.js"></script>
-    <link rel="stylesheet" href="./assets/index-aa149230.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <title>Københavnerbilleder</title>
+    <script type="module" crossorigin src="./assets/main-fbc3914c.js"></script>
+    <link rel="stylesheet" href="./assets/index-b1b9f9e5.css">
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template 2023</h1>
-    <h2 class="text-custom">TEST FARVE</h2>
-    <p class="text-emerald-500">Powered by <a href="https://vitejs.dev/guide">Vite</a></p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+  <body class="m-auto max-w-7xl bg-slate-900 text-white dark:bg-slate-200">
+    <header class="mt-2 flex justify-end">
+      <div class="fixed top-0 left-0 h-3 w-full origin-left bg-pink-300" id="progress-bar"></div>
+      <button class="m-2 mb-12 rounded-md border-2 border-white bg-slate-500 px-6 py-2 font-semibold shadow-md shadow-slate-500" id="toggle-darkmode">Toggle</button>
+    </header>
+    <section class="mb-12 grid grid-cols-1 gap-x-8 sm:grid-cols-2">
+      <img class="m-2 rounded-md shadow-xl" src="img/lomo-smena-17.webp" alt="" />
+      <div>
+        <h1 class="m-2 font-headline text-3xl dark:text-slate-800">Københavnerbilleder</h1>
+        <h3 class="m-2 font-headline text-xl">Tagline lorem ipsum</h3>
+      </div>
+    </section>
+
+    <section class="mb-12 grid grid-cols-1 sm:grid-cols-2">
+      <p class="m-2 rounded-md bg-slate-800 p-4 text-slate-300 shadow-md shadow-slate-800">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!</p>
+      <p class="m-2 rounded-md bg-slate-800 p-4 text-slate-300 shadow-md shadow-slate-800">
+        Titel: Københavnerbilleder - en guide til hipster foto <br />
+        Forfatter: Sten Simons <br />
+        Antal sider: 344 <br />
+        Forlag: Mellem Linjerne <br />
+        ISBN: 987-6-987654-32-1 <br />
+        Pris: 399.- <br />
+      </p>
+    </section>
+    <section class="mb-12 grid grid-cols-1 gap-x-4 sm:grid-cols-3">
+      <img class="m-2 rounded-md shadow-xl" src="img/kobenhavnerbilleder_oppefra.webp" alt="bog set oppefra" />
+      <img class="m-2 rounded-md shadow-xl" src="img/kobenhavnerbilleder_aaben_venstre.webp" alt="bog åben venstre" />
+      <img class="m-2 rounded-md shadow-xl" src="img/kobenhavnerbilleder-sten-simons.webp" alt="bog cover" />
+    </section>
+    <h2 class="m-2 font-headline text-2xl">Kapitlerne</h2>
+    <section class="mb-12 grid grid-cols-1 sm:grid-cols-2">
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">1. Intro til street foto</h3>
+        <p class="text-slate-300">Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">2. Om at skyde street</h3>
+        <p class="text-slate-300">Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">3. Om at finde det rette motiv</h3>
+        <p class="text-slate-300">Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">4. Digital street foto</h3>
+        <p class="text-slate-300">De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto.</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">5. Analog street foto</h3>
+        <p class="text-slate-300">Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto.</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">6. Om at skyde sort/hvid</h3>
+        <p class="text-slate-300">Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering.</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">7. Kreative teknikker</h3>
+        <p class="text-slate-300">Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!</p>
+      </article>
+      <article class="m-2 rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <h3 class="mb-4 font-headline text-xl">8. Kom helt tæt på!</h3>
+        <p class="text-slate-300">Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</p>
+      </article>
+    </section>
+    <h2 class="m-2 font-headline text-2xl">Pressen siger</h2>
+    <section class="mb-12 grid grid-cols-1 sm:grid-cols-3">
+      <article class="m-2 place-content-between rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <div class="flex">
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" /></svg>
+        </div>
+        <p class="mb-8 text-slate-300">"Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen."</p>
+        <p class="font-semibold">- Hanne Hovgaard, Berlingeren</p>
+      </article>
+      <article class="m-2 place-content-between rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <div class="flex">
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-2q3.35 0 5.675-2.325Q20 15.35 20 12q0-3.35-2.325-5.675Q15.35 4 12 4Q8.65 4 6.325 6.325Q4 8.65 4 12q0 3.35 2.325 5.675Q8.65 20 12 20Zm0-8Z" /></svg>
+        </div>
+        <p class="mb-8 text-slate-300">"Teksten er underholdende, og billederne er sku’ flotte. Hvad mere skal man sige om en fotobog?"</p>
+        <p class="font-semibold">- Kim Kloggaard, Fotojournalen.dk</p>
+      </article>
+      <article class="m-2 place-content-between rounded-md bg-slate-800 p-4 shadow-md shadow-slate-800">
+        <div class="flex">
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+          <svg class="mr-1 mb-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m8 18l4-3.05L16 18l-1.5-4.95l4-2.85h-4.9L12 5l-1.6 5.2H5.5l4 2.85Zm4 4q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Z" /></svg>
+        </div>
+        <p class="mb-8 text-slate-300">"Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde."</p>
+        <p class="font-semibold">- Volmer Hansen, Lukkertiden.dk</p>
+      </article>
+    </section>
+    <h2 class="m-2 font-headline text-2xl">Billeder fra bogen</h2>
+    <section class="mb-12"></section>
+    <h2 class="m-2 font-headline text-2xl">Om forfatteren</h2>
+    <section class="mb-12 grid grid-cols-1 gap-x-4 sm:grid-cols-3">
+      <img class="m-2 rounded-md shadow-xl" src="img/sten_simons.webp" alt="" />
+      <p class="m-2 rounded-md bg-slate-800 p-4 text-slate-300 shadow-md shadow-slate-800">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
+    </section>
+    <h2 class="m-2 font-headline text-2xl">Find nærmeste forhandler</h2>
+    <button class="m-2 mb-12 rounded-md bg-slate-500 px-6 py-2 font-semibold shadow-md shadow-slate-500">Køb online</button>
 
     
+    <!-- <script type="module" src="./darkmode.js"></script> -->
   </body>
 </html>
